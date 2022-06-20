@@ -26,7 +26,7 @@ class Usuario {
     }
 }
 
-let usuario1 = new Usuario ('Nacho', 'Wolf',[{nombre:'The Analyst', autor:'John Katzenbach'}],['Wanda'])
+let usuario1 = new Usuario ('Nacho', 'Wolf',[{nombre:'The Analyst', autor:'John Katzenbach'}],['Perro'])
 usuario1.addMascota('Po')
 usuario1.addMascota('Lala')
 

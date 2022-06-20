@@ -28,6 +28,6 @@
 //     }
 // }
 
-// let multiplicador = crearMultiplicador(3)
-// let resultado = multiplicador(3)
+// const duplicar = crearMultiplicador(2)
+// const triplicar = crearMultiplicador(3)
 // console.log(resultado)
