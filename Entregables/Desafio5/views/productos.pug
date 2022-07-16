@@ -7,6 +7,7 @@ html
             header(class="row g-0")
                 div(class="d-flex justify-content-center fw-bold text-primary fs-3 mt-5") Lista de Productos
             section(class="row m-5 bg-dark text-light")
+            if productos.length > 0
                 div(class="row g-0")
                     div(class="col-4 border d-flex fw-bold justify-content-center") Nombre
                     div(class="col-4 border d-flex fw-bold justify-content-center") Precio
@@ -16,7 +17,9 @@ html
                         div(class="col-4 border-bottom border-end bg-secondary border-start d-flex justify-content-center") #{prod.producto.title}
                         div(class="col-4 border-bottom border-end bg-secondary d-flex justify-content-center") #{prod.producto.price}
                         div(class="col-4 border-bottom border-end bg-secondary d-flex justify-content-center") #{prod.producto.thumbnail}
+            else
+                div(class="d-flex justify-content-center fw-bold text-dark fs-3 pb-5") No hay productos
             a(href="http://127.0.0.1:8080/")
                 button(class="text-decoration-none text-dark" type="button" class="btn btn-info") Ingresar Producto
 
-    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p", crossorigin="anonymous") 
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p", crossorigin="anonymous")
